@@ -12,7 +12,7 @@ from collective.volto.stickyblocks.interfaces import IStickyBlocks
 
 @implementer(IExpandableElement)
 @adapter(Interface, Interface)
-class ExternalLinks(object):
+class StickyBlocksGet(object):
     def __init__(self, context, request):
         self.context = context
         self.request = request
