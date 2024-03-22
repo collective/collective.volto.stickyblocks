@@ -6,7 +6,7 @@
 
   <adapter
       factory=".controlpanel.StickyBlocksControlpanel"
-      provides="collective.volto.sickyblocks.interfaces.IStickyBlocks"
+      provides="collective.volto.stickyblocks.interfaces.IStickyBlocks"
       name="sticky-blocks-settings"
       />
 
