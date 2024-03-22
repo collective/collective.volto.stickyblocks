@@ -20,7 +20,7 @@ msgstr ""
 
 #: collective/volto/stickyblocks/profiles/default/controlpanel.xml
 msgid "Sticky Blocks Settings"
-msgstr ""
+msgstr "Blocchi Fissi"
 
 #: collective/volto/stickyblocks/configure.zcml:39
 msgid "Uninstalls the collective.volto.stickyblocks add-on."
@@ -37,9 +37,9 @@ msgstr ""
 #. Default: "Sticky Blocks Configuration"
 #: collective/volto/stickyblocks/interfaces.py:18
 msgid "sticky_blocks_label"
-msgstr ""
+msgstr "Blocchi Fissi"
 
 #. Default: "Sticky Blocks Settings"
 #: collective/volto/stickyblocks/controlpanel/sticky_blocks.py:9
 msgid "sticky_blocks_settings_label"
-msgstr ""
+msgstr "Blocchi Fissi Controlpanel"

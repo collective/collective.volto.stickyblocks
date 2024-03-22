@@ -2,5 +2,4 @@
 """Init and utils."""
 from zope.i18nmessageid import MessageFactory
 
-
-_ = MessageFactory('collective.volto.stickyblocks')
+_ = MessageFactory("collective.volto.stickyblocks")

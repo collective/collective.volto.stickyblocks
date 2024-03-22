@@ -5,21 +5,12 @@
     i18n_domain="collective.volto.stickyblocks"
     >
 
-  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
-  <include
-      package="z3c.jbot"
-      file="meta.zcml"
-      />
-  <browser:jbot
-      directory="overrides"
+  <browser:page
+      name="sticky-blocks-settings"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".sticky_blocks.StickyBlocks"
+      permission="cmf.ManagePortal"
       layer="collective.volto.stickyblocks.interfaces.ICollectiveVoltoStickyblocksLayer"
-      />
-
-  <!-- Publish static files -->
-  <plone:static
-      directory="static"
-      name="collective.volto.stickyblocks"
-      type="plone"
       />
 
 </configure>

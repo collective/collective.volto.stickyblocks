@@ -33,31 +33,13 @@ collective.volto.stickyblocks
 
 Sticky blocks configurable tract
 
-Features
---------
-
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
 
 Translations
 ------------
 
 This product has been translated into
 
-- Klingon (thanks, K'Plai)
+- Italian
 
 
 Installation
@@ -79,7 +61,7 @@ and then running ``bin/buildout``
 Authors
 -------
 
-Provided by awesome people ;)
+RedTurtle
 
 
 Contributors
@@ -87,7 +69,7 @@ Contributors
 
 Put your name here, you deserve it!
 
-- ?
+- folix-01
 
 
 Contribute
@@ -102,7 +84,7 @@ Support
 -------
 
 If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+We have a mailing list located at: info@redturtle.it
 
 
 License
