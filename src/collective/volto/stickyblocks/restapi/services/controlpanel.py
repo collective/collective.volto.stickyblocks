@@ -11,7 +11,7 @@ from collective.volto.stickyblocks.interfaces import (
 
 @adapter(Interface, ICollectiveVoltoStickyblocksLayer)
 @implementer(IStickyBlocks)
-class ExternaLinksControlpanel(RegistryConfigletPanel):
+class StickyBlocksControlpanel(RegistryConfigletPanel):
     schema = IStickyBlocks
     configlet_id = "StickyBlocks"
     configlet_category_id = "Products"

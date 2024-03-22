@@ -5,9 +5,9 @@
     >
 
   <adapter
-      factory=".controlpanel.ExternaLinksControlpanel"
+      factory=".controlpanel.StickyBlocksControlpanel"
       provides="collective.volto.sickyblocks.interfaces.IStickyBlocks"
-      name="external-links-settings"
+      name="sticky-blocks-settings"
       />
 
 </configure>
