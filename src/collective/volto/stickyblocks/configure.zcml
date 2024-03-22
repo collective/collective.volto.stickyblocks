@@ -19,6 +19,7 @@
 
   <include package=".browser" />
   <include package=".controlpanel" />
+  <include package=".restapi" />
 
   <genericsetup:registerProfile
       name="default"
