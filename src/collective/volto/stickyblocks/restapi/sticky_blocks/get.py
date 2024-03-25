@@ -33,12 +33,16 @@ class StickyBlocks(object):
 
     def get_sticky_blocks(self):
         """Get sticky blocks for the current context"""
+        from functools import cmp_to_key
 
-        context_path = "/".join(self.context.getPhysicalPath())
+        context_path = "/" + "/".join(self.context.getPhysicalPath()[2:])
 
-        for item in self.get_config():
-            if item["rootPath"] == context_path:
-                return item
+        matches = sorted(
+            [i for i in self.get_config() if context_path.startswith(i["rootPath"])],
+            key=cmp_to_key(lambda a, b: len(a) > len(b)),
+        )
+
+        return matches and matches[-1] or []
 
     def get_config(self):
         return json.loads(
