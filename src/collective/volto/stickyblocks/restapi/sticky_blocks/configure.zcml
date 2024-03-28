@@ -15,7 +15,7 @@
 
   <adapter
       factory=".get.StickyBlocks"
-      name="sticky_blocks"
+      name="sticky-blocks"
       />
 
   <cache:ruleset
