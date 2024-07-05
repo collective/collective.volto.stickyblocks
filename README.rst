@@ -58,11 +58,6 @@ Install collective.volto.stickyblocks by adding it to your buildout::
 and then running ``bin/buildout``
 
 
-Authors
--------
-
-RedTurtle
-
 
 Contributors
 ------------
@@ -91,3 +86,12 @@ License
 -------
 
 The project is licensed under the GPLv2.
+
+Authors
+-------
+
+This product was developed by **RedTurtle Technology** team.
+
+.. image:: https://avatars1.githubusercontent.com/u/1087171?s=100&v=4
+   :alt: RedTurtle Technology Site
+   :target: http://www.redturtle.it/
