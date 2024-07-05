@@ -5,6 +5,11 @@ collective.volto.stickyblocks
 Sticky blocks configurable tract
 
 
+Volto Integration
+=================
+
+This product works with `volto-sticky-blocks <https://github.com/collective/volto-sticky-blocks>`_ frontend package
+
 Translations
 ------------
 
