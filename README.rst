@@ -2,7 +2,8 @@
 collective.volto.stickyblocks
 =============================
 
-Sticky blocks configurable tract
+Sticky blocks configurable tract which speds on the child elements.
+Extended description in the frontend package `volto-sticky-blocks <https://github.com/collective/volto-sticky-blocks>`_
 
 
 Volto Integration
@@ -48,8 +49,6 @@ Contribute
 
 - Issue Tracker: https://github.com/collective/collective.volto.stickyblocks/issues
 - Source Code: https://github.com/collective/collective.volto.stickyblocks
-- Documentation: https://docs.plone.org/foo/bar
-
 
 Support
 -------
