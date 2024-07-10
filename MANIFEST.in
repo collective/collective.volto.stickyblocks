@@ -12,3 +12,6 @@ exclude base.cfg
 exclude buildout.cfg
 exclude test_plone52.cfg
 exclude test_plone60.cfg
+exclude .gitlab-ci.yml
+exclude .python-version
+exclude tox.ini
