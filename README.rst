@@ -2,7 +2,7 @@
 collective.volto.stickyblocks
 =============================
 
-Sticky blocks configurable tract which speds on the child elements.
+Sticky blocks configurable tract which spreds on the child elements.
 Extended description in the frontend package `volto-sticky-blocks <https://github.com/collective/volto-sticky-blocks>`_
 
 
