@@ -7,6 +7,10 @@
   <configure zcml:condition="installed AccessControl.security">
     <!-- -*- extra stuff goes here -*- -->
 
+    <permission
+        id="collective.volto.stickyblocks.ManageStickyBlocks"
+        title="collective.volto.stickyblocks: ManageStickyBlocks"
+    />
 
   </configure>
 
