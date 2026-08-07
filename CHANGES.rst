@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.1 (unreleased)
+1.0.1 (2026-08-07)
 ------------------
 
 - Grant control panel access to the Site Administrator role instead of only Manager.
