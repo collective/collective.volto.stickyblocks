@@ -5,7 +5,10 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix KeyError raised by the @sticky-blocks endpoint when the package is
+  present but not installed on the site.
+  See `issue #1 <https://github.com/collective/collective.volto.stickyblocks/issues/1>`_.
+  [mamico]
 
 
 1.0.1 (2026-08-07)
