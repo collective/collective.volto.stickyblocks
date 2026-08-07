@@ -9,7 +9,7 @@
       name="sticky-blocks-settings"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       class=".sticky_blocks.StickyBlocks"
-      permission="cmf.ManagePortal"
+      permission="collective.volto.stickyblocks.ManageStickyBlocks"
       layer="collective.volto.stickyblocks.interfaces.ICollectiveVoltoStickyblocksLayer"
       />
 

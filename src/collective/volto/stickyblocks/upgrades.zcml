@@ -1,0 +1,15 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
+
+  <genericsetup:upgradeSteps
+    source="1000"
+    destination="1001"
+    profile="collective.volto.stickyblocks:default">
+    <genericsetup:upgradeStep
+        title="Grant control panel access to the Site Administrator role"
+        handler=".upgrades.to_1001"
+        />
+  </genericsetup:upgradeSteps>
+
+</configure>

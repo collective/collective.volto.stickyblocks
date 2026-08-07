@@ -3,5 +3,10 @@
   <permissions>
   <!-- -*- extra stuff goes here -*- -->
 
+    <permission name="collective.volto.stickyblocks: ManageStickyBlocks" acquire="True">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
+
   </permissions>
 </rolemap>
