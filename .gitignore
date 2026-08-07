@@ -19,6 +19,7 @@ node_modules/
 forest.*
 
 # venv / buildout related
+.python-version
 bin/
 develop-eggs/
 eggs/
