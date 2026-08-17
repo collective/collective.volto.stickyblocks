@@ -54,3 +54,36 @@ COLLECTIVE_VOLTO_STICKYBLOCKS_ACCEPTANCE_TESTING = FunctionalTesting(
     ),
     name="CollectiveVoltoStickyblocksLayer:AcceptanceTesting",
 )
+
+
+class CollectiveVoltoStickyblocksNotInstalledLayer(PloneSandboxLayer):
+    """ZCML is loaded (as it would be if the package is only on the Python
+    path), but the GenericSetup profile is never applied, so the registry
+    record is never created. This reproduces
+    https://github.com/collective/collective.volto.stickyblocks/issues/1
+    """
+
+    defaultBases = (PLONE_FIXTURE,)
+
+    def setUpZope(self, app, configurationContext):
+        import plone.app.dexterity
+
+        self.loadZCML(package=plone.app.dexterity)
+        import plone.restapi
+
+        self.loadZCML(package=plone.restapi)
+        self.loadZCML(package=collective.volto.stickyblocks)
+
+    def setUpPloneSite(self, portal):
+        pass
+
+
+COLLECTIVE_VOLTO_STICKYBLOCKS_NOT_INSTALLED_FIXTURE = (
+    CollectiveVoltoStickyblocksNotInstalledLayer()
+)
+
+
+COLLECTIVE_VOLTO_STICKYBLOCKS_NOT_INSTALLED_INTEGRATION_TESTING = IntegrationTesting(
+    bases=(COLLECTIVE_VOLTO_STICKYBLOCKS_NOT_INSTALLED_FIXTURE,),
+    name="CollectiveVoltoStickyblocksLayer:NotInstalledIntegrationTesting",
+)

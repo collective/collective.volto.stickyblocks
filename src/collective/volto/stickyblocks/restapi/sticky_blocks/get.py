@@ -45,13 +45,17 @@ class StickyBlocks(object):
         return matches and matches[-1] or []
 
     def get_config(self):
-        return json.loads(
-            api.portal.get_registry_record(
+        try:
+            settings = api.portal.get_registry_record(
                 interface=IStickyBlocks,
                 name="sticky_blocks_configuration",
                 default="[]",
             )
-        )
+        except KeyError:
+            # the registry record is missing when the package is present
+            # but its profile was never applied to this site
+            settings = "[]"
+        return json.loads(settings)
 
 
 class StickyBlocksGet(Service):
